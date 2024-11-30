@@ -1,0 +1,136 @@
+.contact-container {
+  padding: 120px 0;
+}
+
+.contact-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-title {
+  font-weight: 700;
+  font-family: Tinos;
+  font-size: 80px;
+  text-align: center;
+  color: #311f09;
+  margin-bottom: 36px;
+}
+.contact-subtitle {
+  font-weight: 400;
+  font-family: Poppins;
+  font-size: 25px;
+  color: #5c4529;
+  line-height: 1.4em;
+  text-align: center;
+  width: 65vw;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 108px;
+}
+
+/**=====================*/
+/*? FORM */
+/**=====================*/
+
+#form-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* grid-template-rows: repeat(2, 1fr) 2fr; */
+  grid-column-gap: 32px;
+  grid-row-gap: 50px;
+}
+
+#form-contact .input-submit {
+  grid-column: 1 / -1;
+}
+
+.form-cont input {
+  display: block;
+  outline: none;
+
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 25px;
+  color: #311f09;
+
+  width: 540px;
+  height: 100px;
+  background-color: rgba(208, 204, 199, 0.2);
+  border-radius: 20px;
+  line-height: 27.5px;
+  padding-left: 80px;
+}
+
+#form-contact input::placeholder {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 25px;
+  color: #a0978c;
+  line-height: 27.5px; /* 27.5px */
+}
+
+#form-contact textarea {
+  width: 100%;
+  height: auto;
+  resize: none;
+  outline: none;
+
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 25px;
+  color: #311f09;
+
+  background-color: rgba(208, 204, 199, 0.2);
+  border-radius: 20px;
+  padding: 60px 80px;
+}
+
+#form-contact textarea::placeholder {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 25px;
+  color: #a0978c;
+}
+
+.text-input {
+  display: block;
+  width: 100%;
+}
+
+.submint-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#submit-contac {
+  padding: 36px 0;
+  height: 100%;
+  background-color: rgba(255, 138, 0, 1);
+  text-align: center;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 27.5px; /* 27.5px */
+}
+
+/**=====================*/
+/*? GOOGLE-MAP */
+/**=====================*/
+
+.map-section {
+  background-image: url("../img/Screen-Shot-map.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}

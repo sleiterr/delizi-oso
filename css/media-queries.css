@@ -1,0 +1,5 @@
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 95%; /* На менших екранах контейнер стає ширшим щодо екрану */
+  }
+}
