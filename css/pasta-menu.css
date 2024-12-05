@@ -285,6 +285,7 @@
 /*!======== CHECK-BAR ===========*/
 
 .aside-check-bar {
+  height: 100%;
 }
 
 .check-bar {
@@ -413,7 +414,7 @@
   line-height: 50px; /* 50px */
 }
 
-/*!======== PSZZA-SECTION ===========*/
+/*!======== VOUCHER-SECTION ===========*/
 
 .voucher-section {
   border-top: 2px dashed #d0ccc7;
@@ -421,7 +422,7 @@
   height: auto;
   width: 100%;
   padding: 25px 0 25px 0;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .voucher-title {
@@ -457,6 +458,21 @@
   color: #0875c3;
   line-height: normal;
   text-transform: uppercase;
+}
+
+/*? btn-checkout */
+
+.btn-checkout {
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-size: 25px;
+  color: #fff;
+  line-height: 50px; /* 50px */
+  padding: 5px 80px;
+
+  border-radius: 15px;
+  background: #3fc66e;
+  margin: 70px 0 50px 0;
 }
 
 /*!======== PSZZA-SECTION ===========*/
