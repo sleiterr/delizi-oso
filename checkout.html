@@ -59,16 +59,20 @@
     </header>
     <main>
       <section class="checkout-section">
+
         <div class="checkout-container container">
           <div class="arrow-title-box">
-            <i class="icon-chevron-left"></i>
-            <h2>Checkout</h2>
+            <a href="./pasta-menu.html">
+              <i class="icon-chevron-left"></i>
+            </a>
+            <h2 class="checkout-title">Checkout</h2>
           </div>
+
           <div class="address-registration">
-            <h4>
+            <h4 class="registr-title">
               Shipping address
             </h4>
-            <form action="#" method="#">
+            <form action="#" method="#" class="registr-form-address">
               <input 
                 type="text" 
                 id="address" 
@@ -76,11 +80,14 @@
                 placeholder="Address" 
                 autocomplete="street-address"
                 required
+                class="registr-input"
               >
-              
+              <a href="#" class="registr-btn">
+                Change
+              </a>
             </form>
           </div>
-          
+
           <!-- FORM-CONTACT -->
           <div class="contact-form">
 

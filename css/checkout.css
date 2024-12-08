@@ -1,13 +1,100 @@
+.checkout-container {
+  padding: 120px 0;
+}
+
+.arrow-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.checkout-title {
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-size: 80px;
+
+  color: var(--title-color);
+  text-align: center;
+  font-style: normal;
+
+  width: 100%;
+  align-items: center;
+}
+
+.icon-chevron-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 34px;
+  background-color: #311f09;
+  border-radius: 50%;
+
+  width: 50px;
+  height: 50px;
+}
+
+.icon-chevron-left {
+  color: #fff;
+}
+
+/**=====================*/
+/*? ADDRESS-REGISTRATION */
+/**=====================*/
+
+.address-registration {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 60px;
+
+  margin-top: 120px;
+}
+
+.registr-title {
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+  font-size: 30px;
+  
+  color: #000;
+  line-height: 33px; /* 33px */
+}
+
+.registr-form-address {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+}
+.registr-input {
+  border-radius: 20px;
+  min-width: 860px;
+  height: 100px;
+  background-color: rgba(208, 204, 199, 1);
+}
+
+.registr-btn {
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-size: 25px;
+
+  color: #fff;
+  border-radius: 20px;
+  line-height: 38.25px; /* 38.25px */
+  padding: 31px 57px;
+  background-color: rgba(116, 159, 224, 1);
+}
+
+/**=====================*/
+/*? FORM */
+/**=====================*/
 .contact-form {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 108px;
 }
-
-/**=====================*/
-/*? FORM */
-/**=====================*/
 
 #form-contact {
   display: grid;
