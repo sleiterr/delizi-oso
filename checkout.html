@@ -89,9 +89,12 @@
           </div>
 
           <!-- FORM-CONTACT -->
-          <div class="contact-form">
+          <div class="order-form">
 
-            <form action="#" class="form-cont" id="form-contact">
+            <h4 class="data-title">
+              Order data
+            </h4>
+            <form action="#" class="form-data" id="order-data">
               <input type="text" name="FirstName" id="name-tx" placeholder="First Name" />
               <input type="text" name="LastName" id="name-tx" placeholder="Last Name" />
               <input type="text" name="Subject" id="name-tx" placeholder="Subject" />
@@ -101,53 +104,58 @@
                 id="email-txt"
                 placeholder="Email address"
               />
-              <div class="input-submit">
-                <div class="text-input">
+              <div class="order-submit">
+                <div class="order-input">
 
                   <textarea
                   name="message"
                   id="message-txt"
                   cols="30"
                   rows="10"
-                  placeholder="Message"
+                  placeholder="Note"
                   ></textarea>
                 </div>
-                <div class="submint-btn">
+                <!-- <div class="order-btn">
                   <input type="submit" value="Submit" id="submit-contac"/>
-                </div>
+                </div> -->
               </div>
             </form>
 
           </div>
+          
+          <div class="options-section">
+            <div class="filters-order">
+              <form action="#" class="options-order">
+                <h4 class="options-title">Order time</h4>
+                <input type="checkbox" id="order-checkbox" name="vehicle1" value="Bike">
+                <label for="order-checkbox" class="checkbox-title">Order now</label>
+                <input type="checkbox" id="order-checkbox" name="vehicle2" value="Car">
+                <label for="order-checkbox" class="checkbox-title">Order later</label>
+              </form>
+            </div>
 
-          <div class="">
+            <div class="filters-method">
+              <form action="#" class="order-method">
+                <h4 class="method-title">Order method</h4>
+                <input type="checkbox" id="order-method-1" name="vehicle1" value="Bike">
+                <label for="order-checkbox" class="method-title">Delivery</label>
+                <input type="checkbox" id="order-method-2" name="vehicle2" value="Car">
+                <label for="order-checkbox" class="method-title">Take a way</label>
+              </form>
+            </div>
+
+            <div class="">
             <form action="/action_page.php">
-              <h4>Order time</h4>
-              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-              <label for="vehicle1">Order now</label><br>
-              <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-              <label for="vehicle2">Order later</label><br>
-            </form>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> I have a boat</label><br><br>
+              </form>
+            </div>  
           </div>
-          <div class="">
-            <form action="/action_page.php">
-              <h4>Order method</h4>
-              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-              <label for="vehicle1">Delivery</label><br>
-              <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-              <label for="vehicle2">Take a way</label><br>
-            </form>
-          </div>
-          <div class="">
-           <form action="/action_page.php">
-              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-              <label for="vehicle1"> I have a bike</label><br>
-              <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-              <label for="vehicle2"> I have a car</label><br>
-              <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-              <label for="vehicle3"> I have a boat</label><br><br>
-            </form>
-          </div>
+          
         </div>
         <div class="">
           <form action="/submit-form" method="post">

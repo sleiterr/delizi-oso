@@ -56,7 +56,7 @@
   font-family: "Poppins", system-ui;
   font-weight: 500;
   font-size: 30px;
-  
+
   color: #000;
   line-height: 33px; /* 33px */
 }
@@ -67,18 +67,34 @@
   justify-content: flex-start;
   gap: 32px;
 }
+
+.registr-input::placeholder {
+  font-weight: 400;
+  font-size: 25px;
+  color: #a0978c;
+  line-height: 27.5px; /* 27.5px */
+}
+
 .registr-input {
+  display: block;
+  outline: none;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 25px;
+  color: #311f09;
+
   border-radius: 20px;
+  padding-left: 80px;
   min-width: 860px;
   height: 100px;
-  background-color: rgba(208, 204, 199, 1);
+  background-color: rgba(208, 204, 199, 0.1);
 }
 
 .registr-btn {
   font-family: "Poppins", system-ui;
   font-weight: 400;
   font-size: 25px;
-
+  
   color: #fff;
   border-radius: 20px;
   line-height: 38.25px; /* 38.25px */
@@ -89,27 +105,46 @@
 /**=====================*/
 /*? FORM */
 /**=====================*/
-.contact-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 108px;
+
+.data-title {
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+  font-size: 30px;
+
+  color: #000;
+  line-height: normal;
+  margin-bottom: 60px;
+  text-align: left;
+  /* width: 100%; */
 }
 
-#form-contact {
+.order-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  margin-top: 100px;
+  width: 100%;
+}
+
+#order-data {
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* grid-template-columns: repeat(2, 1fr); */
   /* grid-template-rows: repeat(2, 1fr) 2fr; */
   grid-column-gap: 32px;
   grid-row-gap: 50px;
+  /* width: 100%; */
 }
 
-#form-contact .input-submit {
+#order-data .order-submit {
   grid-column: 1 / -1;
 }
 
-.form-cont input {
+
+
+.form-data input {
   display: block;
   outline: none;
 
@@ -126,7 +161,7 @@
   padding-left: 80px;
 }
 
-#form-contact input::placeholder {
+#order-data input::placeholder {
   font-family: Poppins;
   font-weight: 400;
   font-size: 25px;
@@ -134,7 +169,7 @@
   line-height: 27.5px; /* 27.5px */
 }
 
-#form-contact textarea {
+#order-data textarea {
   width: 100%;
   height: auto;
   resize: none;
@@ -150,24 +185,24 @@
   padding: 60px 80px;
 }
 
-#form-contact textarea::placeholder {
+#order-data textarea::placeholder {
   font-family: Poppins;
   font-weight: 400;
   font-size: 25px;
   color: #a0978c;
 }
 
-.text-input {
+.order-input {
   display: block;
   width: 100%;
 }
 
-.submint-btn {
+/* .order-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-}
+} */
 
 /* #submit-contac {
   padding: 36px 0;
