@@ -125,11 +125,17 @@
           
           <div class="options-section">
             <div class="filters-order">
+              <h4 class="options-title">Order time</h4>
               <form action="#" class="options-order">
-                <h4 class="options-title">Order time</h4>
-                <input type="radio" id="order-now" name="order-time" value="now">
+                <input 
+                  type="radio" 
+                  id="order-now" 
+                  name="order-time" 
+                  value="now" class="radio-order"
+                >
+
                 <label for="order-now" class="checkbox-title">Order now</label>
-                
+
                 <input type="radio" id="order-later" name="order-time" value="later">
 
                 <select name="order-leter-time" id="order-time-dropdown">
@@ -176,7 +182,7 @@
           
         </div>
         <div class="">
-          <form action="/submit-form" method="post">
+          <form action="#" method="#">
             <input type="checkbox" id="confirmation" name="confirmation" required>
               <label for="confirmation">
                 Choose to indicate that you have read and agree to our Terms of use & Privacy Policy.
@@ -186,6 +192,7 @@
         </div>
       </section>
     </main>
+
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-container container">
