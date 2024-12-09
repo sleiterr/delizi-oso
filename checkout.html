@@ -127,31 +127,40 @@
             <div class="filters-order">
               <form action="#" class="options-order">
                 <h4 class="options-title">Order time</h4>
-                <input type="checkbox" id="order-checkbox" name="vehicle1" value="Bike">
-                <label for="order-checkbox" class="checkbox-title">Order now</label>
-                <input type="checkbox" id="order-checkbox" name="vehicle2" value="Car">
-                <label for="order-checkbox" class="checkbox-title">Order later</label>
+                <input type="checkbox" id="order-now" name="order-time" value="now">
+                <label for="order-now" class="checkbox-title">Order now</label>
+
+                <input type="checkbox" id="order-later" name="order-time" value="later">
+                <label for="order-later" class="checkbox-title">Order later</label>
               </form>
             </div>
 
             <div class="filters-method">
               <form action="#" class="order-method">
                 <h4 class="method-title">Order method</h4>
-                <input type="checkbox" id="order-method-1" name="vehicle1" value="Bike">
-                <label for="order-checkbox" class="method-title">Delivery</label>
-                <input type="checkbox" id="order-method-2" name="vehicle2" value="Car">
-                <label for="order-checkbox" class="method-title">Take a way</label>
+                <input type="checkbox" id="order-delivery" name="order-method" value="delivery">
+                <label for="order-delivery" class="label-title">Delivery</label>
+
+                <input type="checkbox" id="order-take-a-way" name="order-method" value="take-a-way">
+                <label for="order-take-a-way" class="label-title">Take a way</label>
               </form>
             </div>
 
-            <div class="">
-            <form action="/action_page.php">
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                <label for="vehicle1"> I have a bike</label><br>
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2"> I have a car</label><br>
-                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                <label for="vehicle3"> I have a boat</label><br><br>
+            <div class="payment-section">
+              <form action="#" class="payment-form">
+                <div class="payment-checkbox">
+                  <input type="checkbox" id="cash-check" name="vehicle1" value="Bike">
+                  <label for="vehicle1" class="payment-title">Cash On Delivery</label>
+                  <input type="checkbox" id="credit-check" name="vehicle2" value="Car">
+                  <label for="vehicle2" class="payment-title">Credit Card</label>
+                </div>
+
+                <div class="payment-method">
+                  <input type="checkbox" id="account-check" name="vehicle3" value="Boat">
+                  <label for="vehicle3" class="method-title">BCA Virtual Account</label>
+                  <input type="checkbox" id="transfer-check" name="vehicle3" value="Boat">
+                  <label for="vehicle3" class="method-title">Transfer Bank</label>
+                </div>
               </form>
             </div>  
           </div>
