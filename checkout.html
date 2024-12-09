@@ -127,21 +127,28 @@
             <div class="filters-order">
               <form action="#" class="options-order">
                 <h4 class="options-title">Order time</h4>
-                <input type="checkbox" id="order-now" name="order-time" value="now">
+                <input type="radio" id="order-now" name="order-time" value="now">
                 <label for="order-now" class="checkbox-title">Order now</label>
+                
+                <input type="radio" id="order-later" name="order-time" value="later">
 
-                <input type="checkbox" id="order-later" name="order-time" value="later">
-                <label for="order-later" class="checkbox-title">Order later</label>
+                <select name="order-leter-time" id="order-time-dropdown">
+                  <option value="" selected disabled>Order later</option>
+                  <option value="morning">Morning</option>
+                  <option value="afternoon">Afternoon</option>
+                  <option value="evening">Evening</option>
+                </select>
+
               </form>
             </div>
 
             <div class="filters-method">
               <form action="#" class="order-method">
                 <h4 class="method-title">Order method</h4>
-                <input type="checkbox" id="order-delivery" name="order-method" value="delivery">
+                <input type="radio" id="order-delivery" name="order-method" value="delivery">
                 <label for="order-delivery" class="label-title">Delivery</label>
 
-                <input type="checkbox" id="order-take-a-way" name="order-method" value="take-a-way">
+                <input type="radio" id="order-take-a-way" name="order-method" value="take-a-way">
                 <label for="order-take-a-way" class="label-title">Take a way</label>
               </form>
             </div>
@@ -149,17 +156,19 @@
             <div class="payment-section">
               <form action="#" class="payment-form">
                 <div class="payment-checkbox">
-                  <input type="checkbox" id="cash-check" name="vehicle1" value="Bike">
-                  <label for="vehicle1" class="payment-title">Cash On Delivery</label>
-                  <input type="checkbox" id="credit-check" name="vehicle2" value="Car">
-                  <label for="vehicle2" class="payment-title">Credit Card</label>
+                  <input type="radio" id="cash-check" name="payment" value="cash">
+                  <label for="cash-check" class="payment-title">Cash On Delivery</label>
+
+                  <input type="radio" id="credit-check" name="payment" value="credit">
+                  <label for="credit-check" class="payment-title">Credit Card</label>
                 </div>
 
                 <div class="payment-method">
-                  <input type="checkbox" id="account-check" name="vehicle3" value="Boat">
-                  <label for="vehicle3" class="method-title">BCA Virtual Account</label>
-                  <input type="checkbox" id="transfer-check" name="vehicle3" value="Boat">
-                  <label for="vehicle3" class="method-title">Transfer Bank</label>
+                  <input type="radio" id="account-check" name="payment-method" value="bca-virtual-account">
+                  <label for="account-check" class="method-title">BCA Virtual Account</label>
+
+                  <input type="radio" id="transfer-check" name="payment-method" value="bank-transfer">
+                  <label for="transfer-check" class="method-title">Transfer Bank</label>
                 </div>
               </form>
             </div>  
