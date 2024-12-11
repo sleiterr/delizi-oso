@@ -376,9 +376,15 @@ select:after {
   line-height: normal;
 }
 
+.pay-title {
+  font-weight: 400;
+  font-size: 25px;
+  color: #311f09;
+  line-height: normal;
+}
+
 .payment-checkbox {
 }
-.payment-title {
-}
+
 .payment-method {
 }
