@@ -231,7 +231,7 @@
   width: 100%;
 }
 
-.options-order input[type="radio"] {
+.radio-chek-box input[type="radio"] {
   width: 44px;
   height: 44px;
   accent-color: #3fa72f;
@@ -241,7 +241,15 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 100%;
+  gap: 80px;
+  /* width: 100%; */
+}
+
+.radio-chek-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .options-title {
@@ -254,8 +262,123 @@
   margin-bottom: 63px;
 }
 
-.radio-order {
-
-}
 .checkbox-title {
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-size: 25px;
+  color: #311f09;
+  line-height: normal;
+}
+
+#order-time-dropdown {
+  appearance: none;
+  background: none;
+
+  outline: none;
+  position: relative;
+
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-size: 25px;
+  color: #311f09;
+  line-height: normal;
+  padding-right: 20px;
+}
+
+#order-time-dropdown select {
+  cursor: pointer;
+}
+
+select:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+
+  mask: url("./sprite.svg#icon-chevron-left") no-repeat center;
+  -webkit-mask: url("./sprite.svg#icon-chevron-left") no-repeat center;
+
+  background-color: #000; /* Колір іконки */
+  transform: translateY(-50%) rotate(-90deg); /* Обертаємо стрілку вниз */
+}
+
+/*? filters-method */
+
+.filters-method {
+  margin-top: 100px;
+  width: 100%;
+
+  margin-bottom: 103px;
+}
+.order-method {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 111px;
+}
+
+.order-method input[type="radio"] {
+  width: 44px;
+  height: 44px;
+  accent-color: #3fa72f;
+}
+
+.method-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+
+#order-delivery {
+}
+
+.method-title {
+  font-weight: 500;
+  font-size: 30px;
+  color: #000;
+  line-height: 33px; /* 33px */
+
+  margin-bottom: 33px;
+}
+
+.label-title {
+  font-weight: 400;
+  font-size: 25px;
+  color: #311f09;
+  line-height: normal;
+}
+
+/*? PAYMENT-SECTION */
+
+.payment-section {
+  width: 100%;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+}
+
+.payment-title {
+  font-weight: 500;
+  font-size: 30px;
+  color: #000;
+  line-height: normal;
+}
+
+.payment-checkbox {
+}
+.payment-title {
+}
+.payment-method {
 }

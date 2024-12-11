@@ -127,54 +127,64 @@
             <div class="filters-order">
               <h4 class="options-title">Order time</h4>
               <form action="#" class="options-order">
-                <input 
+                <div class="radio-chek-box">
+
+                  <input 
                   type="radio" 
                   id="order-now" 
                   name="order-time" 
                   value="now" class="radio-order"
-                >
-
-                <label for="order-now" class="checkbox-title">Order now</label>
-
-                <input type="radio" id="order-later" name="order-time" value="later">
-
-                <select name="order-leter-time" id="order-time-dropdown">
-                  <option value="" selected disabled>Order later</option>
-                  <option value="morning">Morning</option>
-                  <option value="afternoon">Afternoon</option>
-                  <option value="evening">Evening</option>
-                </select>
+                  >
+                  
+                  <label for="order-now" class="checkbox-title">Order now</label>
+                </div>
+                
+                <div class="radio-chek-box">
+                  <input type="radio" id="order-later" name="order-time" value="later">
+                  
+                  <select name="order-leter-time" id="order-time-dropdown">
+                    <option value="" selected disabled>Order later</option>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                  </select>
+                </div>
 
               </form>
             </div>
 
             <div class="filters-method">
+              <h4 class="method-title">Order method</h4>
               <form action="#" class="order-method">
-                <h4 class="method-title">Order method</h4>
-                <input type="radio" id="order-delivery" name="order-method" value="delivery">
-                <label for="order-delivery" class="label-title">Delivery</label>
-
-                <input type="radio" id="order-take-a-way" name="order-method" value="take-a-way">
-                <label for="order-take-a-way" class="label-title">Take a way</label>
+                <div class="method-items">
+                  <input type="radio" id="order-delivery" name="order-method" value="delivery">
+                  <label for="order-delivery" class="label-title">Delivery</label>
+                </div>
+                  
+                <div class="method-items">
+                  <input type="radio" id="order-take-a-way" name="order-method" value="take-a-way">
+                  <label for="order-take-a-way" class="label-title">Take a way</label>
+                </div>
               </form>
             </div>
 
             <div class="payment-section">
               <form action="#" class="payment-form">
+                <h4 class="payment-title">Order method</h4>
                 <div class="payment-checkbox">
                   <input type="radio" id="cash-check" name="payment" value="cash">
-                  <label for="cash-check" class="payment-title">Cash On Delivery</label>
+                  <label for="cash-check" class="radio-title">Cash On Delivery</label>
 
                   <input type="radio" id="credit-check" name="payment" value="credit">
-                  <label for="credit-check" class="payment-title">Credit Card</label>
+                  <label for="credit-check" class="radio-title">Credit Card</label>
                 </div>
 
                 <div class="payment-method">
                   <input type="radio" id="account-check" name="payment-method" value="bca-virtual-account">
-                  <label for="account-check" class="method-title">BCA Virtual Account</label>
+                  <label for="account-check" class="radio-title">BCA Virtual Account</label>
 
                   <input type="radio" id="transfer-check" name="payment-method" value="bank-transfer">
-                  <label for="transfer-check" class="method-title">Transfer Bank</label>
+                  <label for="transfer-check" class="radio-title">Transfer Bank</label>
                 </div>
               </form>
             </div>  
