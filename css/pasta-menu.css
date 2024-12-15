@@ -518,4 +518,44 @@
   padding: 200px 0;
 }
 
+.gallery-title {
+  position: relative;
+
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-size: 30px;
+  color: #000;
+
+  text-transform: uppercase;
+}
+
+.gallery-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 130px;
+  height: 2px;
+  left: 0;
+  bottom: -10px;
+  background: orange;
+}
+
+/* .menu-pizza {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 45px;
+  grid-row-gap: 0px;
+}
+
+.menu-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  gap: 30px;
+} */
+
+
 /*!======== PSZZA-SECTION ===========*/
