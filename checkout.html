@@ -58,7 +58,7 @@
       </div>
     </header>
     <main>
-      <section class="checkout-section">
+      <section class="shipping-section">
 
         <div class="checkout-container container">
           <div class="arrow-title-box">
@@ -169,37 +169,59 @@
             </div>
 
             <div class="payment-section">
+
               <form action="#" class="payment-form">
                 <h4 class="payment-title">Order method</h4>
                 <div class="payment-checkbox">
-                  <input type="radio" id="cash-check" name="payment" value="cash">
-                  <label for="cash-check" class="pay-title">Cash On Delivery</label>
-
-                  <input type="radio" id="credit-check" name="payment" value="credit">
-                  <label for="credit-check" class="pay-title">Credit Card</label>
+                  <div class="payment-bcc">
+                    <input type="radio" id="cash-check" name="payment" value="cash">
+                    <label for="cash-check" class="pay-title">Cash On Delivery</label>
+                  </div>
+                  
+                  <div class="payment-bcc">
+                    <input type="radio" id="credit-check" name="payment" value="credit">
+                    <label for="credit-check" class="pay-title">Credit Card</label>
+                  </div>
                 </div>
 
-                <div class="payment-method">
-                  <input type="radio" id="account-check" name="payment-method" value="bca-virtual-account">
-                  <label for="account-check" class="pay-title">BCA Virtual Account</label>
-
-                  <input type="radio" id="transfer-check" name="payment-method" value="bank-transfer">
-                  <label for="transfer-check" class="pay-title">Transfer Bank</label>
+                <div class="payment-checkbox">
+                  <div class="payment-bcc">
+                    <input type="radio" id="account-check" name="payment-method" value="bca-virtual-account">
+                    <label for="account-check" class="pay-title">BCA Virtual Account</label>
+                  </div>
+                  
+                  <div class="payment-bcc">
+                    <input type="radio" id="transfer-check" name="payment-method" value="bank-transfer">
+                    <label for="transfer-check" class="pay-title">Transfer Bank</label>
+                  </div>
                 </div>
               </form>
             </div>  
           </div>
           
-        </div>
-        <div class="">
-          <form action="#" method="#">
-            <input type="checkbox" id="confirmation" name="confirmation" required>
-              <label for="confirmation">
-                Choose to indicate that you have read and agree to our Terms of use & Privacy Policy.
+          <div class="conf-check">
+            <form action="#" method="#" class="confir-check">
+              
+              <label for="confirmation" class="form-confi">
+                <p class="confi-text">
+                  Choose to indicate that you have read and agree to our Terms of use
+                  <a href="#" class="confi-link">& Privacy Policy.</a>
+                </p>
+                <input type="checkbox" id="confirmation" name="confirmation" required>
+                <!-- <i class="fa-solid fa-check checkmark"></i> -->
+                <span class="checkmark"></span>
               </label>
-              <button type="submit">Order now</button>
-          </form>
+
+                <!-- <label for="confirmation" class="form-confi">
+                  <input type="checkbox" id="confirmation" name="confirmation" required>
+                  Choose to indicate that you have read and agree to our Terms of use & Privacy Policy.
+                </label> -->
+              <button type="submit" class="conf-bttn">Order now</button>
+            </form>
+          </div>
+
         </div>
+
       </section>
     </main>
 
