@@ -20,7 +20,21 @@
   margin-left: 110px;
 }
 
+.sign-up-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 17px;
+  width: 100%;
+}
+
 .login-title {
+  font-weight: 700;
+  font-size: 40px;
+  color: #311f09;
+  line-height: normal;
 }
 
 .ligont-text {
