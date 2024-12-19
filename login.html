@@ -29,24 +29,62 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section>
-        <div class="container">
-          <div class="">
-            <h2>Login</h2>
-            <p>Don't have an account? <a href="#">Sign up</a></p>
 
-            <form action="">
-              <input type="email">
-              <input type="password">
-            </form>
-            <form action="">
-              <input type="checkbox">
-              <label for="checkbox">Remember  me</label>
-            </form>
-          </div>
+    <section>
+      <div class="form-sign-up">
+        <div class="box-login">
+          <h2 class="login-title">Login</h2>
+          <p class="ligont-text">Don't have an account ?<a href="#">Sign up</a></p>
+
+          <form action="#" method="post" class="login-login">
+            <input
+              type="email"
+              name="email"
+              id="email-txt"
+              placeholder="Email address"
+              class="login-email"
+            />
+            <input
+              type="password"
+              name="password"
+              autocomplete="off"
+              required
+              minlength="3"
+              maxlength="20"
+              placeholder="Password"
+              class="login-password"
+            />
+          </form>
+
+          <form action="#" method="post" class="login-check">
+            <label for="confirmation" class="login-check-box">
+              <input
+                type="checkbox"
+                id="confirmation"
+                name="confirmation"
+                required
+              />
+              Remember me
+            </label>
+            <a href="#" class="checkbox-link">Forget Password ?</a>
+            <div class="">
+              <button type="submit" name="action" value="login" class="login-submit">
+                Log in
+              </button>
+              <button type="submit" name="action" value="google" class="google-submit">
+                Log in with google
+              </button>
+            </div>
+          </form>
         </div>
-      </section>
-    </main>
+        <div class="img-login-form">
+          <img
+            src="./img/login-sign/unsplash.jpg"
+            alt="img-login"
+            class="form-img"
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>

@@ -1,0 +1,57 @@
+.header {
+  width: 50%;
+}
+
+.form-sign-up {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-sign-up {
+}
+
+.box-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 110px;
+}
+
+.login-title {
+}
+
+.ligont-text {
+}
+
+.login-login {
+}
+
+.login-email {
+}
+
+.login-password {
+}
+
+.login-check {
+}
+
+.login-check-box {
+}
+
+.checkbox-link {
+}
+
+.login-submit {
+}
+
+.google-submit {
+}
+
+.img-login-form {
+}
+
+.form-img {
+}
