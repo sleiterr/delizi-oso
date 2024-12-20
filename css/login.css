@@ -51,24 +51,28 @@
   color: #0094ff;
 }
 
+/*? FORM-LOGIN */
+
 .form-login {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 
-  width: 100%;
+  min-width: 415px;
 }
 
 .form-login input {
   display: block;
   outline: none;
 
-  font-weight: 400;
-  font-size: 25px;
   color: #311f09;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
 
-  width: 415px;
+  /* width: 415px; */
+  padding: 30px 19px;
   height: auto;
   background-color: rgba(208, 204, 199, 0.2);
   border-radius: 20px;
@@ -84,12 +88,112 @@
 }
 
 .login-check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  margin-top: 40px;
+}
+
+.login-check-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .login-check-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  padding-left: 36px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  font-weight: 400;
+  font-size: 14px;
+  color: #5c4529;
+  line-height: normal;
+}
+
+/*? checkmark */
+
+.login-check-box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.login-text {
+  /* display: flex; */
+}
+
+/* Create a custom checkbox */
+.login-check-box .login-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border: 1px solid #dcd4cb;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.login-mark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.login-check-box input:checked ~ .login-mark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.login-check-box .login-mark:after {
+  left: 7px;
+  top: 0;
+  width: 10px;
+  height: 18px;
+  border: solid rgb(0, 0, 0, 0.4);
+  border-radius: 2px;
+  border-width: 0 2px 2px 0;
+
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .checkbox-link {
+  font-weight: 400;
+  font-size: 14px;
+  color: #5c4529;
+  line-height: normal;
+
+  margin-right: 26px;
+}
+
+.login-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+  margin-top: 30px;
 }
 
 .login-submit {
@@ -101,5 +205,8 @@
 .img-login-form {
 }
 
-.form-img {
+.login-img {
+  object-fit: cover;
+  width: 803px;
+  height: 1024px;
 }

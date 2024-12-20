@@ -60,17 +60,18 @@
           </form>
 
           <form action="#" method="post" class="login-check">
-            <label for="confirmation" class="login-check-box">
-              <input
-                type="checkbox"
-                id="confirmation"
-                name="confirmation"
-                required
-              />
-              Remember me
-            </label>
-            <a href="#" class="checkbox-link">Forget Password ?</a>
-            <div class="">
+            <div class="login-check-section">
+              <label for="confirmation" class="login-check-box">
+                <input
+                  type="checkbox"
+                  id="confirmation"
+                  name="confirmation"
+                />
+                <span class="login-mark"></span> <p class="login-text">Remember me</p>
+              </label>
+              <a href="#" class="checkbox-link">Forget Password ?</a>
+            </div>
+            <div class="login-btn">
               <button
                 type="submit"
                 name="action"
@@ -94,7 +95,7 @@
           <img
             src="./img/login-sign/unsplash.jpg"
             alt="img-login"
-            class="form-img"
+            class="login-img"
           />
         </div>
       </div>
