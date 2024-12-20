@@ -18,6 +18,7 @@
   align-items: center;
   justify-content: center;
   margin-left: 110px;
+
 }
 
 .sign-up-content {
@@ -59,7 +60,9 @@
   align-items: flex-start;
   justify-content: center;
 
-  min-width: 415px;
+  /* min-width: 415px; */
+  width: 100%;
+  gap: 66px;
 }
 
 .form-login input {
@@ -118,6 +121,7 @@
   -ms-user-select: none;
   user-select: none;
 
+  font-family: "Poppins", system-ui;
   font-weight: 400;
   font-size: 14px;
   color: #5c4529;
@@ -178,11 +182,12 @@
 }
 
 .checkbox-link {
+  font-family: "Poppins", system-ui;
   font-weight: 400;
   font-size: 14px;
   color: #5c4529;
   line-height: normal;
-
+  
   margin-right: 26px;
 }
 
@@ -197,9 +202,33 @@
 }
 
 .login-submit {
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  line-height: normal;
+  
+  width: 100%;
+  padding: 19px 186px;
+  border-radius: 10px;
+  background-color: #ff8a00;
 }
 
 .google-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+  font-size: 14px;
+  color: #311f09;
+  line-height: normal;
+
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  padding: 19px 186px;
+  border: 1px solid rgb(182, 163, 139, 0.8);
 }
 
 .img-login-form {

@@ -411,6 +411,7 @@ button {
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
+
 }
 
 .menu-items {
@@ -419,12 +420,13 @@ button {
   /* background-color: rgb(208, 204, 199, 0.1); */
   margin-right: 27px;
   box-sizing: border-box;
-  min-width: 100px;
+  /* min-width: 100px; */
 }
 
 .menu-items:hover {
   background-color: rgb(49, 31, 9);
   transition: background-color 0.5s ease;
+
 }
 
 .menu-items:hover .menu-link {
