@@ -20,78 +20,81 @@
     /> -->
   </head>
   <body>
-    <header class="header">
-      <div class="header-container container">
-        <nav class="header-navigation">
-          <div class="logo">
+    <section>
+      <div class="login-grid-container">
+        
+        <div class="form-sign-up">
+          <div class="login-item">
             <a href="./index.html" class="logo-circle">D</a>
           </div>
-        </nav>
-      </div>
-    </header>
+          <div class="box-login">
+            <div class="sign-up-content">
+              <h2 class="login-title">Login</h2>
+              <p class="login-text">
+                Don't have an account ?
+                <a href="#" class="login-link">Sign up</a>
+              </p>
+            </div>
+            <form action="#" method="post" class="form-login">
+              <input
+                type="email"
+                name="email"
+                id="email-txt"
+                placeholder="Email address"
+                class="login-email"
+              />
+              <input
+                type="password"
+                name="password"
+                autocomplete="off"
+                required
+                minlength="3"
+                maxlength="20"
+                placeholder="Password"
+                class="login-password"
+              />
+            </form>
 
-    <section>
-      <div class="form-sign-up">
-        <div class="box-login">
-          <div class="sign-up-content">
-            <h2 class="login-title">Login</h2>
-            <p class="login-text">
-              Don't have an account ? <a href="#" class="login-link">Sign up</a>
-            </p>
+            <form action="#" method="post" class="login-check">
+              <div class="login-check-section">
+                <label for="confirmation" class="login-check-box">
+                  <input
+                    type="checkbox"
+                    id="confirmation"
+                    name="confirmation"
+                  />
+                  <span class="login-mark"></span>
+                  <p class="login-text">Remember me</p>
+                </label>
+                <a href="#" class="checkbox-link">Forget Password ?</a>
+              </div>
+              <div class="login-btn">
+                <button
+                  type="submit"
+                  name="action"
+                  value="login"
+                  class="login-submit"
+                >
+                  Log in
+                </button>
+                <button
+                  type="submit"
+                  name="action"
+                  value="google"
+                  class="google-submit"
+                >
+                  <img
+                    src="./img/login-sign/google-icon.png"
+                    alt="google-icon"
+                    class="google-icon"
+                  />
+                  Log in with google
+                </button>
+              </div>
+            </form>
           </div>
-          <form action="#" method="post" class="form-login">
-            <input
-              type="email"
-              name="email"
-              id="email-txt"
-              placeholder="Email address"
-              class="login-email"
-            />
-            <input
-              type="password"
-              name="password"
-              autocomplete="off"
-              required
-              minlength="3"
-              maxlength="20"
-              placeholder="Password"
-              class="login-password"
-            />
-          </form>
-
-          <form action="#" method="post" class="login-check">
-            <div class="login-check-section">
-              <label for="confirmation" class="login-check-box">
-                <input
-                  type="checkbox"
-                  id="confirmation"
-                  name="confirmation"
-                />
-                <span class="login-mark"></span> <p class="login-text">Remember me</p>
-              </label>
-              <a href="#" class="checkbox-link">Forget Password ?</a>
-            </div>
-            <div class="login-btn">
-              <button
-                type="submit"
-                name="action"
-                value="login"
-                class="login-submit"
-              >
-                Log in
-              </button>
-              <button
-                type="submit"
-                name="action"
-                value="google"
-                class="google-submit"
-              >
-                <img src="./img/login-sign/google-icon.png" alt="">
-                Log in with google
-              </button>
-            </div>
-          </form>
         </div>
+
         <div class="img-login-form">
           <img
             src="./img/login-sign/unsplash.jpg"
