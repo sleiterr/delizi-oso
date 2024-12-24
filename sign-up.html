@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/icons.css" />
     <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/sign-up.css" />
     <!-- FONT-AWESOME -->
     <!-- <link
       rel="stylesheet"
@@ -35,20 +36,22 @@
               </p>
             </div>
             <form action="#" method="post" class="form-login">
+                <p class="login-subtitle">Full name</p>
               <input
                 type="text"
                 name="FirstName"
                 id="name-tx"
-                placeholder="First name"
+                required
                 class="login-first-name"
               />
+              <p class="login-subtitle">Email address</p>
               <input
                 type="email"
                 name="email"
                 id="email-txt"
-                placeholder="Email address"
                 class="login-email"
               />
+              <p class="login-subtitle">Password</p>
               <input
                 type="password"
                 name="password"
@@ -56,7 +59,6 @@
                 required
                 minlength="3"
                 maxlength="20"
-                placeholder="Password"
                 class="login-password"
               />
             </form>
