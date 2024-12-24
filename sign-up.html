@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Italian-Restaurant" />
+    <meta name="keywords" content="Italian Cusine" />
+    <meta name="author" content="Oleg Troian" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/icons.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <!-- FONT-AWESOME -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+  </head>
+  <body>
+    <section>
+      <div class="login-grid-container">
+        <div class="form-sign-up">
+          <div class="login-item">
+            <a href="./index.html" class="logo-circle">D</a>
+          </div>
+          <div class="box-login">
+            <div class="sign-up-content">
+              <h2 class="login-title">Sign up</h2>
+              <p class="login-text">
+                Don't have an account ?
+                <a href="./login.html" class="login-link">Log in</a>
+              </p>
+            </div>
+            <form action="#" method="post" class="form-login">
+              <input
+                type="text"
+                name="FirstName"
+                id="name-tx"
+                placeholder="First name"
+                class="login-first-name"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email-txt"
+                placeholder="Email address"
+                class="login-email"
+              />
+              <input
+                type="password"
+                name="password"
+                autocomplete="off"
+                required
+                minlength="3"
+                maxlength="20"
+                placeholder="Password"
+                class="login-password"
+              />
+            </form>
+
+            <form action="#" method="post" class="login-check">
+              <div class="login-check-section">
+                <label for="confirmation" class="login-check-box">
+                  <input
+                    type="checkbox"
+                    id="confirmation"
+                    name="confirmation"
+                  />
+                  <span class="login-mark"></span>
+                  <p class="login-text">Remember me</p>
+                </label>
+                <a href="#" class="checkbox-link">Forget Password ?</a>
+              </div>
+              <div class="login-btn">
+                <button
+                  type="submit"
+                  name="action"
+                  value="login"
+                  class="login-submit"
+                >
+                  Log in
+                </button>
+                <button
+                  type="submit"
+                  name="action"
+                  value="google"
+                  class="google-submit"
+                >
+                  <img
+                    src="./img/login-sign/google-icon.png"
+                    alt="google-icon"
+                    class="google-icon"
+                  />
+                  Log in with google
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="img-login-form">
+          <img
+            src="./img/login-sign/unsplash.jpg"
+            alt="img-login"
+            class="login-img"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
