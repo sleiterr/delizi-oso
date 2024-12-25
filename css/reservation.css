@@ -75,7 +75,7 @@
   height: auto;
 }
 
-#check-submit {
+#regstr-submit {
   font-family: "Poppins", system-ui;
   font-weight: 600;
   font-size: 25px;
@@ -94,57 +94,78 @@
 /*? MODAL */
 
 .backdrop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  pointer-events: auto;
+
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(46, 47, 66, 0.4);
+  background-color: rgb(92, 69, 41, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 3;
+  z-index: 999;
 }
 
 .is-hidden {
-  opacity: 1;
+  opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden; 
 }
 
 .modal {
   width: 95%;
   height: 95%;
+  /* max-width: 80vw; */
   max-width: 1112px;
-  max-height: 2065px;
+  max-height: 90vh;
 
+  overflow-y: auto;
   position: absolute;
+
   top: 50%;
   left: 50%;
-  padding: 15px 15px 15px;
-  border-radius: 4px;
+  padding: 60px;
+
+  /* margin-top: 187px; */
 
   background-color: #fff;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 666;
 }
 
-.modal-button {
+.btt-close {
+  font-size: 40px;
+}
+
+.btt-regstr {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
 
-  top: 24px;
-  right: 24px;
-  width: 24px;
-  height: 24px;
+  /* position: absolute; */
+
+  /* top: 24px;
+  right: 24px; */
+
+  width: 80px;
+  height: 80px;
   padding: 18px;
   border-radius: 50%;
 
-  background-color: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.459);
+  background-color: #fff;
+  margin-top: 77px;
 
   cursor: pointer;
+  z-index: 666;
 }
 
 /*! MODAL-RESERVATION*/

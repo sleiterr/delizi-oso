@@ -2,15 +2,34 @@
 
 (() => {
   const modal = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-    modal: document.querySelector("[data-modal]"),
+    openModalBtn: document.getElementById("regstr-submit"),
+    closeModalBtn: document.querySelector(".btt-regstr"),
+    modal: document.getElementById("regstr-backdrop"),
+    body: document.body,
   };
 
-  modal.openModalBtn.addEventListener("click", toggleModal);
-  modal.closeModalBtn.addEventListener("click", toggleModal);
+  if (!modal.openModalBtn || !modal.closeModalBtn || modal.modal) {
+    console.log("Modal elements not found in the DOM.");
+  }
 
-  function toggleModal() {
-    modal.modal.classList.toggle("is-hidden");
+  modal.openModalBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    openModal();
+  });
+
+  modal.closeModalBtn.addEventListener("click", closeModal);
+
+  modal.modal.addEventListener("click", (e) => {
+    if (e.target === modal.modal) closeModal();
+  });
+
+  function openModal() {
+    modal.modal.classList.remove("is-hidden");
+    modal.body.classList.add("no-scroll");
+  }
+
+  function closeModal() {
+    modal.modal.classList.add("is-hidden");
+    modal.body.classList.remove("no-scroll");
   }
 })();
