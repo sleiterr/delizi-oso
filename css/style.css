@@ -152,7 +152,7 @@ button {
 
 .nav-link:hover {
   color: #ff8a00;
-  transition: 0.3s ease;
+  transition: 250ms ease;
 }
 
 .log-in {
@@ -171,6 +171,10 @@ button {
   background-color: #d0ccc7;
 }
 
+.icon-card:hover {
+  background-color: rgb(208, 204, 199, 0.8);
+}
+
 .nav-btn {
   font-weight: 600;
   font-size: 14px;
@@ -179,6 +183,12 @@ button {
   background-color: var(--btn-2-color);
   border-radius: 50px;
   color: #fff;
+}
+
+.nav-btn:hover,
+.nav-btn:active {
+  background-color: rgb(63, 167, 47, 0.8);
+  transition: 250ms ease;
 }
 
 /*******************************/
@@ -257,6 +267,12 @@ button {
   margin-right: 23px;
 }
 
+.order-btn:hover,
+.order-btn:active {
+  background-color: rgb(255, 138, 0, 0.8);
+  transition: 250ms ease;
+}
+
 .reserv-btn {
   font-family: "Poppins", system-ui;
   font-size: 20px;
@@ -268,6 +284,12 @@ button {
   color: #fff;
   background-color: var(--btn-2-color);
 }
+
+.reserv-btn:hover,
+.reserv-btn:active {
+  background-color: rgb(63, 167, 47, 0.8);
+  transition: 250ms ease;
+} 
 
 .img-box {
   padding-top: 80px;
@@ -411,7 +433,6 @@ button {
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
-
 }
 
 .menu-items {
@@ -426,7 +447,6 @@ button {
 .menu-items:hover {
   background-color: rgb(49, 31, 9);
   transition: background-color 0.5s ease;
-
 }
 
 .menu-items:hover .menu-link {
@@ -444,7 +464,6 @@ button {
   font-weight: 400;
   color: var(--link-color);
   line-height: 40px; /* 40px */
-  
 }
 
 /*? GALLERY */
@@ -817,8 +836,6 @@ button {
   background-position: right center;
   background-color: rgba(208, 204, 199, 0.2);
 }  */
-
-
 
 .container-reviews {
   display: flex;

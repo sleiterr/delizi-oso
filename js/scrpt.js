@@ -8,7 +8,7 @@
     body: document.body,
   };
 
-  if (!modal.openModalBtn || !modal.closeModalBtn || modal.modal) {
+  if (!modal.openModalBtn || !modal.closeModalBtn || !modal.modal) {
     console.log("Modal elements not found in the DOM.");
   }
 
@@ -24,12 +24,14 @@
   });
 
   function openModal() {
-    modal.modal.classList.remove("is-hidden");
+    modal.modal.classList.add("active");
     modal.body.classList.add("no-scroll");
   }
 
+  window.scrollTo({ top: 0, behavio: "smooth" });
+
   function closeModal() {
-    modal.modal.classList.add("is-hidden");
+    modal.modal.classList.remove("active");
     modal.body.classList.remove("no-scroll");
   }
 })();
