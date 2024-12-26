@@ -260,6 +260,7 @@ button {
   font-weight: 600;
   line-height: 40px; /* 40px */
 
+  display: inline-block;
   color: #fff;
   padding: 17px 62px;
   border-radius: 50px;
@@ -279,6 +280,7 @@ button {
   font-weight: 600;
   line-height: 40px; /* 40px */
 
+  display: inline-block;
   padding: 17px 62px;
   border-radius: 50px;
   color: #fff;
@@ -289,7 +291,7 @@ button {
 .reserv-btn:active {
   background-color: rgb(63, 167, 47, 0.8);
   transition: 250ms ease;
-} 
+}
 
 .img-box {
   padding-top: 80px;
@@ -378,22 +380,31 @@ button {
   color: #5c4529;
   line-height: 40px; /* 40px */
   margin-top: 60px;
+
+  min-width: 430px;
 }
 
-.welc-btn {
+.welc-btn-box {
   margin-top: 122px;
 }
 
-.welc-link {
+.welc-bttn {
   font-family: "Poppins", system-ui;
   font-weight: 600;
   font-size: 20px;
   color: #fff;
   line-height: 40px; /* 40px */
 
+  display: inline-block;
   background-color: var(--btn-1-color);
   border-radius: 50px;
   padding: 17px 45px;
+}
+
+.welc-bttn:hover,
+.welc-bttn:active {
+  background-color: rgb(255, 138, 0, 0.8);
+  transition: 250ms ease;
 }
 
 /*******************************/
@@ -419,6 +430,47 @@ button {
   min-width: 350px;
 }
 
+/*!  */
+
+.menu-box:hover,
+.menu-box:active {
+  background: rgba(255, 138, 0, 1);
+  transition: 250ms ease-in-out;
+}
+
+.menu-box:hover .menu-btn {
+  color: #ff8a00;
+  background-color: #fff;
+  transition: 250ms ease-in;
+}
+
+.menu-box:hover .gall-title {
+  color: #fff;
+  transition: 250ms ease;
+}
+
+.menu-box:hover .gall-text {
+  color: #fff;
+  transition: 250ms ease;
+}
+
+.menu-box:hover .price {
+  color: #fff;
+  transition: 250ms ease;
+}
+
+/* .menu-box:hover i {
+  color: #fff;
+  transition: 250ms ease;
+} */
+
+.menu-box:hover .icon-star-solid {
+  color: rgba(49, 31, 9, 1);
+  transition: 250ms ease;
+}
+
+/*!  */
+
 .menu-title {
   font-family: "Tinos", serif;
   font-weight: 700;
@@ -432,24 +484,26 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+
   margin-bottom: 60px;
 }
 
 .menu-items {
   padding: 17px 60px;
   border-radius: 50px;
-  /* background-color: rgb(208, 204, 199, 0.1); */
   margin-right: 27px;
   box-sizing: border-box;
-  /* min-width: 100px; */
+  /* width: 230px; */
 }
 
-.menu-items:hover {
+.menu-items:hover,
+.menu-items:active {
   background-color: rgb(49, 31, 9);
   transition: background-color 0.5s ease;
 }
 
-.menu-items:hover .menu-link {
+.menu-items:hover .menu-link,
+.menu-items:active .menu-link {
   font-weight: 600;
   color: #fff;
 }
@@ -459,6 +513,8 @@ button {
 }
 
 .menu-link {
+  display: inline-block;
+
   font-family: "Poppins", system-ui;
   font-size: 20px;
   font-weight: 400;
@@ -565,6 +621,12 @@ button {
   background-color: rgba(49, 31, 9, 1);
 }
 
+.btn:hover,
+.btn:active {
+  background-color: rgba(49, 31, 9, 0.9);
+  transition: 250ms ease;
+}
+
 .btn i {
   display: flex;
   align-items: flex-start;
@@ -587,6 +649,12 @@ button {
   color: #ff8a00;
   background-color: rgba(255, 138, 0, 0.1);
   border-radius: 15px;
+}
+
+.page-link:hover {
+  background-color: rgba(255, 138, 0, 0.2);
+  transition: 250ms ease;
+
 }
 
 .dots {
@@ -707,6 +775,8 @@ button {
 }
 
 .res-btn {
+  display: inline-block;
+
   font-family: "Poppins", system-ui;
   font-size: 20px;
   color: #fff;
@@ -715,6 +785,12 @@ button {
   padding: 17px 55px;
   background-color: rgb(255, 138, 1);
   border-radius: 50px;
+}
+
+.res-btn:hover,
+.res-btn:active {
+  background-color: rgb(255, 138, 1, 0.8);
+  transition: 250ms ease;
 }
 
 /*******************************/
@@ -795,6 +871,7 @@ button {
 }
 
 .chef-btn {
+  display: inline-block;
   font-family: "Poppins", system-ui;
   font-weight: 600;
   font-size: 20px;
@@ -803,6 +880,12 @@ button {
   border-radius: 50px;
   background: rgb(255, 138, 0);
   color: #fff;
+}
+
+.chef-btn:hover,
+.chef-btn:active {
+  background: rgb(255, 138, 0, 0.8);
+  transition: 250 ease;
 }
 
 /*******************************/
@@ -1103,6 +1186,8 @@ button {
   align-items: center;
   justify-content: center;
   gap: 24px;
+
+  margin-top: 50px;
 }
 
 .form-button button {
@@ -1119,9 +1204,21 @@ button {
   line-height: 40px; /* 40px */
 }
 
+.now-bttn:hover,
+.now-bttn:active {
+  background-color: rgb(255, 138, 0, 0.8);
+  transition: 250ms ease;
+}
+
 .form-bttn {
   background-color: rgba(255, 255, 255, 1);
-  color: #311f09 var(--title-color);
+  color: var(--title-color);
+}
+
+.form-bttn:hover,
+.form-bttn:active {
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: 250ms ease;
 }
 
 /*******************************/
