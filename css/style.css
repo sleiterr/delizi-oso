@@ -31,18 +31,21 @@ h6 {
   font-weight: inherit;
   font-size: inherit;
 }
+
 html {
   font-size: 0.625rem;
   scroll-behavior: smooth;
-  overflow-x: none;
+  overflow-x: hidden;
 }
+
 body {
   font-size: 1rem;
   font-family: "Raleway", system-ui;
   height: 100%;
   line-height: 1;
-  overflow-x: none;
+  overflow-x: hidden;
 }
+
 button {
   cursor: pointer;
   background-color: inherit;
@@ -150,7 +153,8 @@ button {
   color: var(--link-color);
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:active {
   color: #ff8a00;
   transition: 250ms ease;
 }
@@ -1302,7 +1306,6 @@ button {
 .footer-social:active > i {
   background-color: rgb(255, 255, 255, 0.8);
   transition: 250ms ease;
-  
 }
 
 /*? MENU  */

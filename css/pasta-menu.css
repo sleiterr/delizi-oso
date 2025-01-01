@@ -307,10 +307,16 @@
   font-size: 30px;
   color: #fff;
 
-  background-color: #512982;
+  background-color: rgb(81, 41, 130);
   padding: 27px 82px;
   border-radius: 20px;
   margin: 20px 0 60px 0;
+}
+
+.btn-list:hover,
+.btn-list:active {
+  background-color: rgb(81, 41, 130, 0.85);
+  transition: 250ms ease;
 }
 
 .check-list {
@@ -451,6 +457,12 @@
   border-radius: 15px;
 }
 
+.voucher-plus:hover,
+.voucher-plus:active {
+  background-color: rgba(83, 165, 224, 0.85);
+  transition: 250ms ease;
+}
+
 .voucher-subtitle {
   font-family: "Poppins", system-ui;
   font-weight: 400;
@@ -471,8 +483,14 @@
   padding: 5px 80px;
 
   border-radius: 15px;
-  background: #3fc66e;
+  background: rgb(63, 198, 110);
   margin: 70px 0 50px 0;
+}
+
+.btn-checkout:hover,
+.btn-checkout:active {
+  background-color: rgb(63, 198, 110, 0.85);
+  transition: 250ms ease;
 }
 
 /*!======== PSZZA-SECTION ===========*/
@@ -539,6 +557,5 @@
   bottom: -10px;
   background: orange;
 }
-
 
 /*!======== PSZZA-SECTION ===========*/

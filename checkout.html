@@ -34,17 +34,27 @@
           <ul class="nav-list">
             <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
             <li class="nav-item">
-              <a href="#" class="nav-link" >Menu </a>
-            </li>
-            <li class="nav-item"><a href="./about-us.html" class="nav-link" target="_blank">About us</a></li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Order online</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Reservation</a>
+              <a href="#" 
+                class="nav-link">
+                Menu
+              </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Contact us</a>
+              <a 
+                href="./about-us.html" 
+                class="nav-link" 
+                target="_blank">
+                About us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./pasta-menu.html" class="nav-link" >Order online</a>
+            </li>
+            <li class="nav-item">
+              <a href="./reservation.html"  class="nav-link" target="_blank">Reservation</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact-us.html" class="nav-link" target="_blank">Contact us</a>
             </li>
           </ul>
 
@@ -52,11 +62,12 @@
             <a href="#" class="icon-card">
               <i class="icon-shopping-cart"></i>
             </a>
-            <button type="button" class="nav-btn">Log in</button>
+            <a href="./login.html" class="nav-btn">Log in</a>
           </div>
         </nav>
       </div>
     </header>
+
     <main>
       <section class="shipping-section">
 
@@ -97,7 +108,17 @@
             <form action="#" class="form-data" id="order-data">
               <input type="text" name="FirstName" id="name-tx" placeholder="First name" />
               <input type="text" name="LastName" id="name-tx" placeholder="Last name" />
-              <input type="text" name="Subject" id="name-tx" placeholder="Phone number" />
+              <div class="phone-input">
+                <select name="coutry-code" id="coutry-code" required>
+                  <option value="+1" selected>US +1</option>
+                  <option value="+44">GB +44</option>
+                  <option value="+349">DE +49</option>
+                  <option value="+380">UA +380</option>
+                </select>
+
+                <!--? tel input -->
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone number" required />
+              </div>
               <input
                 type="email"
                 name="Email"
@@ -148,7 +169,7 @@
                     <option value="afternoon">Afternoon</option>
                     <option value="evening">Evening</option>
                   </select>
-                </div>
+                </div> 
 
               </form>
             </div>
@@ -225,7 +246,7 @@
       </section>
     </main>
 
-  <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-container container">
         <div class="footer-info">
@@ -261,7 +282,7 @@
           <p class="title-page">Page</p>
           <ul class="footer-menu">
             <li class="footer-items">
-              <a href="#home" class="footer-link">
+              <a href="./index.html" class="footer-link">
                 Home
               </a>
             </li>
@@ -271,7 +292,7 @@
               </a>
             </li>
             <li class="footer-items">
-              <a href="./pasta-menu.html" class="footer-link" target="_blank">
+              <a href="./pasta-menu.html" class="footer-link">
                 Order online
               </a>
             </li>
