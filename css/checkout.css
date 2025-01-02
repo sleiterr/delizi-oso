@@ -22,7 +22,7 @@
   align-items: center;
 }
 
-.icon-chevron-left {
+.to-menu {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,8 +35,8 @@
   height: 50px;
 }
 
-.icon-chevron-left:hover,
-.icon-chevron-left:active {
+.to-menu:hover,
+.to-menu:active {
   background-color: rgb(49, 31, 9, 0.85);
   transition: 250ms ease;
 }
@@ -210,21 +210,26 @@
   position: relative;
 }
 
+.phone-arrow {
+  font-size: 15px;
+  color: #000;
+}
+
 #coutry-code {
   position: absolute;
   display: block;
   outline: none;
 
-  left: 58px;
+  left: 15px;
   top: 35%;
   font-size: 25px;
   color: #311f09;
-  background-color: transparent;
-  width: 120px;
+  background-color: #fff;
+  padding:  11px 0 11px 43px;
 }
 
 #phone {
-  padding-left: 229px;
+  padding-left: 200px
 }
 
 /**=====================*/
