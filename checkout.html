@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/pasta-menu.css" />
     <link rel="stylesheet" href="./css/icons.css" />
     <link rel="stylesheet" href="./css/checkout.css" />
+    <script src="./js/custom-arrows.js" defer></script>
     <!-- FONT-AWESOME -->
     <link
       rel="stylesheet"
@@ -83,7 +84,7 @@
             <h4 class="registr-title">
               Shipping address
             </h4>
-            <form action="#" method="#" class="registr-form-address">
+            <form action="#" autocomplete="on"method="#" class="registr-form-address">
               <input 
                 type="text" 
                 id="address" 
@@ -105,7 +106,7 @@
             <h4 class="data-title">
               Order data
             </h4>
-            <form action="#" class="form-data" id="order-data">
+            <form action="#" autocomplete="on" class="form-data" id="order-data">
               <input type="text" name="FirstName" id="name-tx" placeholder="First name" />
               <input type="text" name="LastName" id="name-tx" placeholder="Last name" />
               <div class="phone-input">
@@ -115,8 +116,8 @@
                   <option value="+349">DE +49</option>
                   <option value="+380">UA +380</option>
                 </select>
-                <i class="icon-chevron-left phone-arrow"></i>
-                <!--? tel input -->
+                <!-- <i class="icon-chevron-left phone-arrow"></i> -->
+                <!-- <i class="fa-solid fa-chevron-up phone-arrow"></i> -->
                 <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone number" required />
               </div>
               <input
