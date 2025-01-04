@@ -295,7 +295,6 @@
 }
 
 #order-time-dropdown {
-  appearance: none;
   background: none;
 
   outline: none;
@@ -311,25 +310,6 @@
 
 #order-time-dropdown select {
   cursor: pointer;
-}
-
-select:after {
-  content: "";
-  position: absolute;
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  transform: translateY(-50%);
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-
-  mask: url("./sprite.svg#icon-chevron-left") no-repeat center;
-  -webkit-mask: url("./sprite.svg#icon-chevron-left") no-repeat center;
-
-  background-color: #000; /* Колір іконки */
-  transform: translateY(-50%) rotate(-90deg); /* Обертаємо стрілку вниз */
 }
 
 /*? filters-method */

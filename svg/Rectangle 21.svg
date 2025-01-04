@@ -1,0 +1,19 @@
+<svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="14" fill="#E5E5E5"/>
+<g id="Reservation" clip-path="url(#clip0_0_1)">
+<rect width="1440" height="1832" transform="translate(-1196 -466)" fill="white"/>
+<g id="Book a table">
+<g id="Book a table_2">
+<g id="Date">
+<rect id="Rectangle 20" opacity="0.1" x="-395" y="-46" width="475" height="100" rx="20" fill="#D0CCC7"/>
+<path id="Rectangle 21" d="M22.3952 1.39518L11.7886 12.0018L1.18197 1.39518" stroke="#5C4529" stroke-width="2" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="1832" fill="white" transform="translate(-1196 -466)"/>
+</clipPath>
+</defs>
+</svg>

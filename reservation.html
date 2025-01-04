@@ -27,25 +27,30 @@
           </div>
 
           <ul class="nav-list">
+            <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
             <li class="nav-item">
-              <a href="./index.html" class="nav-link">Home</a>
+              <a href="./menu.html" 
+                class="nav-link" 
+                target="_blank">
+                Menu
+              </a>
             </li>
             <li class="nav-item">
-              <a href="./menu.html" class="nav-link" target="_blank"> Menu </a>
-            </li>
-            <li class="nav-item">
-              <a href="./about-us.html" class="nav-link" target="_blank">
+              <a 
+                href="./about-us.html" 
+                class="nav-link" 
+                target="_blank">
                 About us
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Order online</a>
+              <a href="./pasta-menu.html" class="nav-link" target="_blank">Order online</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Reservation</a>
+              <a href="#"  class="nav-link">Reservation</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Contact us</a>
+              <a href="./contact-us.html" class="nav-link" target="_blank">Contact us</a>
             </li>
           </ul>
 
@@ -53,7 +58,7 @@
             <a href="#" class="icon-card">
               <i class="icon-shopping-cart"></i>
             </a>
-            <button type="button" class="nav-btn">Log in</button>
+            <a href="./login.html" class="nav-btn">Log in</a>
           </div>
         </nav>
       </div>
@@ -61,21 +66,50 @@
 
     <main>
       <section class="booking-section" id="booking">
-        <div class="booking-container container">
-          <div class="img-reserv">
-            <div class="border">
-              <img src="./img/Reservation-img.jpg" alt="Reservation-img" class="image-reserv">
+        <div class="booking-container">
+          <div class="image-box">
+            <div class="img-reserv">
+              <div class="border">
+                <img src="./img/Reservation-img.jpg" alt="Reservation-img" class="image-reserv">
+              </div>
             </div>
           </div>
           <div class="form-section">
             <h2 class="form-title">Book a table</h2>
             <div class="form-check-box">
+
               <form action="#" id="form-check">
+
+                <label for="date">
+                  <input type="date" id="data-table">
+                </label>
+
+                <label for="quantity">
+                  <select name="time" id="time-party">
+                    <option value="Time" selected disabled>Time</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                  </select>
+                </label>
+
+                <label for="quantity">
+                  <select name="partySize" id="quantity">
+                    <option value="Party size" selected disabled>Party size</option>
+                    <option value="1">1 person</option>
+                    <option value="2">2 person</option>
+                    <option value="3">3 person</option>
+                    <option value="4">4 person</option>
+                  </select>
+                </label>
+                <input type="submit" value="Book now" id="regstr-submit">
+              </form>
+              
+              <!-- <form action="#" id="form-check">
                 <label for="date">
                   Date
-                  <select name="date" id="date">
-                    <option value="1"></option>
-                  </select>
+                  <input type="date" id="birthday" name="birthday">
+               
                 </label>
 
                 <label for="time">
@@ -93,7 +127,7 @@
                 </label>
                 
                 <input type="submit" value="Book now" id="regstr-submit">
-              </form>
+              </form> -->
 
               <div class="backdrop is-hidden" id="regstr-backdrop">
 
@@ -113,7 +147,7 @@
       </section>
     </main>
     
-   <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-container container">
         <div class="footer-info">
@@ -167,7 +201,7 @@
               <a href="#" class="footer-link">Catering</a>
             </li>
             <li class="footer-items">
-              <a href="#booking" class="footer-link">
+              <a href="./reservation.html" class="footer-link" target="_blank">
                 Reservation
               </a>
             </li>
