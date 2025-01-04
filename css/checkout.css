@@ -84,7 +84,7 @@
 .registr-input {
   display: block;
   outline: none;
-  font-family: Poppins;
+  font-family: "Poppins", system-ui;
   font-weight: 400;
   font-size: 25px;
   color: #311f09;
@@ -171,7 +171,7 @@
 }
 
 #order-data input::placeholder {
-  font-family: Poppins;
+  font-family: "Poppins", system-ui;
   font-weight: 400;
   font-size: 25px;
   color: #a0978c;
@@ -195,7 +195,7 @@
 }
 
 #order-data textarea::placeholder {
-  font-family: Poppins;
+  font-family: "Poppins", system-ui;
   font-weight: 400;
   font-size: 25px;
   color: #a0978c;

@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/icons.css" />
     <link rel="stylesheet" href="./css/reservation.css" />
+
     <!-- JS -->
     <script src="./js/scrpt.js" defer></script>
+
     <!-- FONT-AWESOME -->
     <script src="https://kit.fontawesome.com/53c6f727c2.js" crossorigin="anonymous"></script>
   </head>
@@ -80,7 +82,8 @@
 
               <form action="#" id="form-check">
 
-                <label for="date">
+                <label for="date" id="data-calendar">
+                  <p class="#">Data</p>
                   <input type="date" id="data-table">
                 </label>
 
@@ -102,6 +105,7 @@
                     <option value="4">4 person</option>
                   </select>
                 </label>
+
                 <input type="submit" value="Book now" id="regstr-submit">
               </form>
               
@@ -131,13 +135,42 @@
 
               <div class="backdrop is-hidden" id="regstr-backdrop">
 
-                  <button type="button" class="btt-regstr">
-                    <!-- <i class="icon-close"></i> -->
-                    <i class="fa-solid fa-xmark btt-close"></i>
-                  </button>
+                <button type="button" class="btt-regstr">
+                  <!-- <i class="icon-close"></i> -->
+                  <i class="fa-solid fa-xmark btt-close"></i>
+                </button>
 
                 <div class="modal">
+
+                  <!-- <div class="nav-reservation"></div> -->
+                  <div class="reserv-navigation">
+                      
+                    <div class="logo-reserv">
+                      <span class="logo-circle">D</span>
+                      <a href="#" class="logo-link"
+                        >Delizi<span class="logo-span">oso</span></a
+                      >
+                    </div>
+
+                    <div class="btn-reserv">
+                      <button class="link-in">
+                        <a href="./login.html" class="sign-link">Sign in</a>
+                      </button>
+                      <button class="link-up">
+                        <a href="./login.html" class="btn-up">Sign up</a>
+                      </button>
+                    </div>
+
+                  </div>
+
+                  <h2 class="reserv-title">Reservation</h2>
+
+                  <div class="">
+                    Due to limited availability, we can hold this table for you for <span>5:00 minutes</span>
+                  </div>
+
                   
+
                 </div>
               </div>
 
