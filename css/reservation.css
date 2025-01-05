@@ -278,3 +278,19 @@
 
   margin-top: 88px;
 }
+
+/**======================*/
+/*! RESERVATION-DATA */
+/**======================*/
+
+.reserv-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calender-icon {
+  fill: #311f09;
+  width: 35px;
+  height: 35px;
+}

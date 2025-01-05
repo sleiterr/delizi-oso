@@ -108,30 +108,6 @@
 
                 <input type="submit" value="Book now" id="regstr-submit">
               </form>
-              
-              <!-- <form action="#" id="form-check">
-                <label for="date">
-                  Date
-                  <input type="date" id="birthday" name="birthday">
-               
-                </label>
-
-                <label for="time">
-                  Time
-                  <select name="time" id="time">
-                    <option value="1"></option>
-                  </select>
-                </label>
-                
-                <label for="quantity">
-                  Party size
-                  <select name="partySize" id="quantity">
-                    <option value="1"></option>
-                  </select>
-                </label>
-                
-                <input type="submit" value="Book now" id="regstr-submit">
-              </form> -->
 
               <div class="backdrop is-hidden" id="regstr-backdrop">
 
@@ -169,7 +145,83 @@
                     Due to limited availability, we can hold this table for you for <span>5:00 minutes</span>
                   </div>
 
-                  
+                  <div class="reserv-data">
+
+                    <div class="data-info">
+                      <!-- FORM-CONTACT -->
+
+                      <h4 class="data-title">
+                        Order data
+                      </h4>
+                      <form action="#" autocomplete="on"class="form-data"       id="order-data">
+                        <input type="text" name="FirstName"id="name-tx"             placeholder="First name" />
+                        <input type="text" name="LastName" id="name-tx"placeholder="Last             name" />
+                        <div class="phone-input">
+                          <select name="coutry-code" id="coutry-code"required>
+                            <option value="+1" selected>US +1</option>
+                            <option value="+44">GB +44</option>
+                            <option value="+349">DE +49</option>
+                            <option value="+380">UA +380</option>
+                          </select>
+                          <!-- <i class="icon-chevron-left phone-arrow"></i> -->
+                          <!-- <i class="fa-solid fa-chevron-up phone-arrow"></i> -->
+                          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-            [0-9]{3}-[0-9]{4}" placeholder="Phone number" required />
+                        </div>
+                        <input
+                          type="email"
+                          name="Email"
+                          id="email-txt"
+                          placeholder="Email address"
+                        />
+                        <div class="order-submit">
+                          <div class="order-input">
+
+                            <textarea
+                            name="message"
+                            id="message-txt"
+                            cols="30"
+                            rows="10"
+                            placeholder="Note"
+                            ></textarea>
+                          </div>
+                          <!-- <div class="order-btn">
+                            <input type="submit" value="Submit"id="submit-contac"/>
+                          </div> -->
+                        </div>
+                      </form>
+
+                    </div>
+                    <div class="reserv-info">
+                      <div class="">
+                        <p>Reservation detail</p>
+                        <ul>
+                          <li>
+                            <img src="./svg/Icon-calender.svg" alt="icon-calender" class="calender-icon">
+                            <p>Saturday, 28 february 2022</p>
+                          </li>
+                          <li>
+                            <img src="./svg/Icon-time.svg" alt="icon-time">
+                            <p>04:30 pm</p>
+                          </li>
+                          <li>
+                            <img src="./svg/icon-people.svg" alt="icon-people">
+                            <p>2 people (Standar seating)</p>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="">
+                        <h4>Restaurant informations</h4>
+                        <p>
+                          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+                          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+
 
                 </div>
               </div>
