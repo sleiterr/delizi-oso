@@ -116,6 +116,7 @@
                   <i class="fa-solid fa-xmark btt-close"></i>
                 </button>
 
+                <!--? MODAL-RESERVATION -->
                 <div class="modal">
 
                   <!-- <div class="nav-reservation"></div> -->
@@ -141,8 +142,10 @@
 
                   <h2 class="reserv-title">Reservation</h2>
 
-                  <div class="">
-                    Due to limited availability, we can hold this table for you for <span>5:00 minutes</span>
+                  <div class="reserv-box-info">
+                    <h4 class="reserv-subtitle">
+                      Due to limited availability, we can hold this table for you for <span class="info-element">5:00 minutes</span>
+                    </h4>
                   </div>
 
                   <div class="reserv-data">
@@ -153,11 +156,13 @@
                       <h4 class="data-title">
                         Order data
                       </h4>
-                      <form action="#" autocomplete="on"class="form-data"       id="order-data">
-                        <input type="text" name="FirstName"id="name-tx"             placeholder="First name" />
-                        <input type="text" name="LastName" id="name-tx"placeholder="Last             name" />
-                        <div class="phone-input">
-                          <select name="coutry-code" id="coutry-code"required>
+                      <form action="#" autocomplete="on" class="form-reserv"     id="data-reserv">
+
+                        <input type="text" name="FirstName"id="name-reserv"             placeholder="First name" />
+                        <input type="text" name="LastName" id="name-reserv"placeholder="Last name" />
+
+                        <div class="phone-reserv-data">
+                          <select name="coutry-code" id="reserv-tel-code"required>
                             <option value="+1" selected>US +1</option>
                             <option value="+44">GB +44</option>
                             <option value="+349">DE +49</option>
@@ -165,12 +170,13 @@
                           </select>
                           <!-- <i class="icon-chevron-left phone-arrow"></i> -->
                           <!-- <i class="fa-solid fa-chevron-up phone-arrow"></i> -->
-                          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-            [0-9]{3}-[0-9]{4}" placeholder="Phone number" required />
+                          <input type="tel" id="reserv-phone-input" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone number" required />
                         </div>
+
                         <input
                           type="email"
                           name="Email"
-                          id="email-txt"
+                          id="email-reserv"
                           placeholder="Email address"
                         />
                         <div class="order-submit">
@@ -178,19 +184,22 @@
 
                             <textarea
                             name="message"
-                            id="message-txt"
+                            id="reserv-message"
                             cols="30"
                             rows="10"
                             placeholder="Note"
                             ></textarea>
                           </div>
-                          <!-- <div class="order-btn">
-                            <input type="submit" value="Submit"id="submit-contac"/>
-                          </div> -->
+
+                          <div class="reserv-data-btn">
+                            <input type="submit" value="Submit" id="submit-reserv"/>
+                          </div>
+
                         </div>
                       </form>
 
                     </div>
+
                     <div class="reserv-info">
                       <div class="">
                         <p>Reservation detail</p>

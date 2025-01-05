@@ -163,7 +163,7 @@
   width: 95%;
   height: 95%;
   max-width: 80vw;
-  max-width: 1112px;
+  min-width: 1112px;
 
   top: 50%;
   left: 50%;
@@ -267,6 +267,10 @@
   line-height: normal;
 }
 
+/**======================*/
+/*! RESERVATION-DATA */
+/**======================*/
+
 .reserv-title {
   font-family: "Tinos", serif;
   font-weight: 700;
@@ -275,19 +279,71 @@
   color: #311f09;
   text-align: center;
   line-height: 92px; /* 92px */
-
+  
   margin-top: 88px;
 }
 
-/**======================*/
-/*! RESERVATION-DATA */
-/**======================*/
+.reserv-box-info {
+  padding: 51px 133px;
+  background-color: rgb(138, 234, 255, 0.40);
+  border-radius: 20px;
+  width: 100%;
+}
+
+.reserv-subtitle {
+  text-align: center;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-size: 20px;
+  
+  color: #5c4529;
+  line-height: 22px; /* 22px */
+}
+
+.info-element {
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-size: 20px;
+  color: #311f09;
+  line-height: 22px;
+}
 
 .reserv-data {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+.data-info {
+  min-width: 523px;
+  height: 100%;
+}
+
+.data-title {
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-size: 25px;
+
+  color: #000;
+  line-height: normal;
+}
+
+.form-reserv {
+}
+
+.phone-reserv-data {
+}
+
+.order-submit {
+}
+
+.order-input {
+}
+
+.reserv-data-btn {
+}
+
+/*? RESERV-INFO */
 
 .calender-icon {
   fill: #311f09;
