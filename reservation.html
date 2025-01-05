@@ -157,7 +157,7 @@
                         Order data
                       </h4>
 
-                      <form action="#" autocomplete="on" class="form-reserv"     id="data-reserv">
+                      <form action="#" autocomplete="on" class="form-reserv" id="data-reserv">
 
                         <input type="text" name="FirstName"id="name-reserv"             placeholder="First name" 
                         required />
@@ -178,39 +178,40 @@
 
                         <input type="email"name="email-reserv" id="email-reserv" placeholder="Email address"
                         />
-                         <select name="selected-accasion" id="reserv-tel-code"required>
-                            <option value="" selected disabled>Select an accasion</option>
-                            <option value="+44">GB +44</option>
-                            <option value="+349">DE +49</option>
-                            <option value="+380">UA +380</option>
-                          </select>
-                        <div class="order-submit">
-                          <div class="order-input">
 
-                            <textarea
-                            name="message"
-                            id="reserv-message"
-                            cols="30"
-                            rows="10"
-                            placeholder="Note"
-                            ></textarea>
-                          </div>
+                        <select name="selected-accasion" id="reserv-tel-code"required>
+                          <option value="" selected disabled>Select an accasion</option>
+                          <option value="+44">GB +44</option>
+                          <option value="+349">DE +49</option>
+                          <option value="+380">UA +380</option>
+                        </select>
 
-                          <div class="radio-chek-reserv">
-                            <input 
-                              type="radio" 
-                              id="order-now" 
-                              name="order-time" 
-                              value="now" class="radio-reserv"
-                            >
-                            <label for="order-now" class="checkbox-title-reserv">Sign me up to receive dining offers and news from this restaurant by email.</label>
-                          </div>
+                          
+                        <div class="order-input">
 
-                          <div class="reserv-data-btn">
-                            <input type="submit" value="Submit" id="submit-reserv"/>
-                          </div>
-
+                          <textarea
+                          name="message"
+                          id="reserv-message"
+                          cols="30"
+                          rows="10"
+                          placeholder="Add a special request"
+                          ></textarea>
                         </div>
+
+                        <div class="radio-chek-reserv">
+                          <input 
+                            type="radio" 
+                            id="order-now" 
+                            name="order-time" 
+                            value="now" class="radio-reserv"
+                          >
+                          <label for="order-now" class="checkbox-title-reserv">Sign me up to receive dining offers and news from this restaurant by email.</label>
+                        </div>
+
+                        <div class="reserv-data-btn">
+                          <input type="submit" value="Submit" id="submit-reserv"/>
+                        </div>
+
                       </form>
 
                     </div>
