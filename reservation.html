@@ -109,17 +109,16 @@
                 <input type="submit" value="Book now" id="regstr-submit">
               </form>
 
+              <!--? BACKDROP -->
               <div class="backdrop is-hidden" id="regstr-backdrop">
 
                 <button type="button" class="btt-regstr">
-                  <!-- <i class="icon-close"></i> -->
                   <i class="fa-solid fa-xmark btt-close"></i>
                 </button>
 
                 <!--? MODAL-RESERVATION -->
                 <div class="modal">
 
-                  <!-- <div class="nav-reservation"></div> -->
                   <div class="reserv-navigation">
                       
                     <div class="logo-reserv">
@@ -147,15 +146,17 @@
                       Due to limited availability, we can hold this table for you for <span class="info-element">5:00 minutes</span>
                     </h4>
                   </div>
+                  
+                  <h4 class="data-title">
+                    Order data
+                  </h4>
 
                   <div class="reserv-data">
-
+                    
+                    
                     <div class="data-info">
                       <!-- FORM-CONTACT -->
-
-                      <h4 class="data-title">
-                        Order data
-                      </h4>
+                      
 
                       <form action="#" autocomplete="on" class="form-reserv" id="data-reserv">
 
@@ -165,27 +166,31 @@
                         <input type="text" name="LastName" id="name-reserv"placeholder="Last name" />
 
                         <div class="phone-reserv-data">
+
                           <select name="coutry-code" id="reserv-tel-code"required>
                             <option value="+1" selected>US +1</option>
                             <option value="+44">GB +44</option>
                             <option value="+349">DE +49</option>
                             <option value="+380">UA +380</option>
                           </select>
-                          <!-- <i class="icon-chevron-left phone-arrow"></i> -->
-                          <!-- <i class="fa-solid fa-chevron-up phone-arrow"></i> -->
+
                           <input type="tel" id="reserv-phone-input" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone number" required />
+
                         </div>
 
                         <input type="email"name="email-reserv" id="email-reserv" placeholder="Email address"
                         />
 
-                        <select name="selected-accasion" id="reserv-tel-code"required>
-                          <option value="" selected disabled>Select an accasion</option>
-                          <option value="+44">GB +44</option>
-                          <option value="+349">DE +49</option>
-                          <option value="+380">UA +380</option>
-                        </select>
+                        <div class="accasion-box">
 
+                          <select name="selected-accasion" id="reserv-accasion" required>
+                            <option value="" selected disabled>Select an accasion</option>
+                            <option value="1-person">1 person</option>
+                            <option value="2-person">2 person</option>
+                            <option value="3-person">3 person</option>
+                          </select>
+                          
+                        </div>
                           
                         <div class="order-input">
 
@@ -203,13 +208,13 @@
                             type="radio" 
                             id="order-now" 
                             name="order-time" 
-                            value="now" class="radio-reserv"
+                            value="now"
                           >
                           <label for="order-now" class="checkbox-title-reserv">Sign me up to receive dining offers and news from this restaurant by email.</label>
                         </div>
 
                         <div class="reserv-data-btn">
-                          <input type="submit" value="Submit" id="submit-reserv"/>
+                          <input type="submit" value="Confirm reservation" id="submit-reserv"/>
                         </div>
 
                       </form>
@@ -217,33 +222,36 @@
                     </div>
 
                     <div class="reserv-info">
-                      <div class="">
-                        <p>Reservation detail</p>
-                        <ul>
-                          <li>
+
+                      <div class="reserv-info-box">
+                        <p class="data-reserv-title">Reservation detail</p>
+                        <ul class="reserv-list">
+                          <li class="reserv-list-item">
                             <img src="./svg/Icon-calender.svg" alt="icon-calender" class="calender-icon">
-                            <p>Saturday, 28 february 2022</p>
+                            <p class="list-info">Saturday, 28 february 2022</p>
                           </li>
-                          <li>
-                            <img src="./svg/Icon-time.svg" alt="icon-time">
-                            <p>04:30 pm</p>
+                          <li class="reserv-list-item">
+                            <img src="./svg/Icon-time.svg" alt="icon-time" class="calender-icon">
+                            <p class="list-info">04:30 pm</p>
                           </li>
-                          <li>
-                            <img src="./svg/icon-people.svg" alt="icon-people">
-                            <p>2 people (Standar seating)</p>
+                          <li class="reserv-list-item">
+                            <img src="./svg/icon-people.svg" alt="icon-people" class="calender-icon">
+                            <p class="list-info">2 people (Standar seating)</p>
                           </li>
                         </ul>
                       </div>
 
-                      <div class="">
-                        <h4>Restaurant informations</h4>
-                        <p>
+                      <div class="block-information">
+                        <h4 class="inf-title">Restaurant informations</h4>
+                        <p class="inf-description">
                           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
+                        </p>
+                        <p class="inf-desc">
                           Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.
                         </p>
                       </div>
                     </div>
+
                   </div>
 
 

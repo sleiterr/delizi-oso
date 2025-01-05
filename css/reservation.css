@@ -127,12 +127,14 @@
   transition: 250ms ease;
 }
 
+/**======================*/
 /*! MODAL-RESERVATION*/
+/**======================*/
 
 /*? MODAL */
 
 .backdrop {
-  /* display: none; */
+  display: none;
   /* display: flex; */
   align-items: flex-start;
   justify-content: center;
@@ -162,15 +164,12 @@
 
   width: 95%;
   height: 95%;
-  max-width: 80vw;
-  min-width: 1112px;
+  width: 1112px;
 
   top: 50%;
   left: 50%;
   padding: 60px;
 
-  /* margin-top: 187px; */
-  overflow: hidden;
   background-color: #fff;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -193,20 +192,15 @@
   border-radius: 50%;
 
   background-color: #fff;
-  /* margin-top: 77px; */
 
   cursor: pointer;
   z-index: 666;
 }
 
-/*! MODAL-RESERVATION*/
-
 /**======================*/
 /*! FORM-BOOK-TABLE */
 /**======================*/
 
-.logo-reserv {
-}
 
 .reserv-navigation {
   display: flex;
@@ -214,15 +208,14 @@
   justify-content: space-between;
 
   width: 100%;
-}
-
-.logo-reserv {
+  margin-bottom: 88px;
 }
 
 .btn-reserv {
   display: flex;
   align-items: center;
   justify-content: center;
+
   gap: 15px;
 }
 
@@ -281,14 +274,16 @@
   text-align: center;
   line-height: 92px; /* 92px */
 
-  margin-top: 88px;
+  margin-bottom: 53px;
 }
 
 .reserv-box-info {
-  padding: 51px 133px;
+  padding: 51px 0;
   background-color: rgb(138, 234, 255, 0.4);
   border-radius: 20px;
   width: 100%;
+
+  margin-bottom: 62px;
 }
 
 .reserv-subtitle {
@@ -311,10 +306,10 @@
 
 .reserv-data {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
-  margin-top: 62px;
+  gap: 40px;
 }
 
 .data-info {
@@ -329,6 +324,7 @@
 
   color: #000;
   line-height: normal;
+  
   margin-bottom: 40px;
 }
 
@@ -337,15 +333,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  gap: 40px;
 }
 
-.form-reserv input {
+#name-reserv,
+#reserv-phone-input,
+#email-reserv {
   display: block;
   outline: none;
 
   font-weight: 400;
   font-size: 18px;
-  color: #311F09;
+  color: #311f09;
   line-height: 22px;
 
   width: 100%;
@@ -353,9 +353,7 @@
 
   background-color: rgba(208, 204, 199, 0.2);
   border-radius: 20px;
-  line-height: 27.5px;
   padding-left: 50px;
-  width: 100%;
 }
 
 #name-reserv::placeholder,
@@ -370,6 +368,73 @@
 }
 
 .phone-reserv-data {
+  position: relative;
+  width: 100%;
+}
+
+#reserv-tel-code {
+  position: absolute;
+  display: block;
+  outline: none;
+
+  left: 15px;
+  top: 25px;
+
+  font-size: 25px;
+  color: #311f09;
+  line-height: 22px;
+
+  background-color: #fff;
+  padding: 11px 0 11px 20px;
+  width: 150px;
+}
+
+#reserv-phone-input {
+  font-weight: 400;
+  font-size: 18px;
+
+  color: #311f09;
+  line-height: 22px; /* 22px */
+  padding-left: 229px;
+}
+
+#reserv-phone-input::placeholder {
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-size: 20px;
+
+  color: #a0978c;
+  line-height: 22px; /* 22px */
+}
+
+.accasion-box {
+  position: relative;
+  width: 100%;
+
+  width: 100%;
+  height: 100px;
+
+  background-color: rgba(208, 204, 199, 0.2);
+  border-radius: 20px;
+  padding-left: 50px;
+}
+
+#reserv-accasion {
+  position: absolute;
+  display: block;
+  outline: none;
+
+  top: 38px;
+  right: 68px;
+
+  color: #a0978c;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 22px */
+  width: 410px;
+  background-color: transparent;
 }
 
 .order-submit {
@@ -415,7 +480,7 @@
   width: 100%;
 }
 
-.radio-reserv {
+#order-now {
   width: 44px;
   height: 44px;
   accent-color: #3fa72f;
@@ -439,6 +504,28 @@
 }
 
 .reserv-data-btn {
+  width: 100%;
+  height: auto;
+}
+
+#submit-reserv {
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-size: 25px;
+
+  color: #fff;
+  line-height: 27.5px; /* 27.5px */
+  background-color: rgba(255, 138, 0, 1);
+  border-radius: 20px;
+
+  padding: 36px 0;
+  width: 100%;
+}
+
+#submit-reserv:hover,
+#submit-reserv:active {
+  background-color: rgba(255, 138, 0, 0.8);
+  transition: 250ms ease;
 }
 
 /*? RESERV-INFO */
@@ -447,4 +534,91 @@
   fill: #311f09;
   width: 35px;
   height: 35px;
+}
+
+.reserv-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 50px;
+}
+
+.reserv-info-box {
+  background-color: rgba(208, 204, 199, 0.2);
+  width: 429px;
+
+  border-radius: 20px;
+  padding: 35px;
+}
+
+.data-reserv-title {
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-size: 25px;
+
+  color: #311f09;
+  line-height: normal;
+  margin-bottom: 46px;
+}
+
+.reserv-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 25px;
+}
+
+.reserv-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 36px;
+}
+
+.list-info {
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-size: 20px;
+
+  color: #5c4529;
+  line-height: 22px; /* 22px */
+}
+
+.block-information {
+  height: auto;
+  width: 407px;
+}
+
+.inf-title {
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-size: 25px;
+
+  color: #000;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+.inf-description {
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-size: 20px;
+
+  color: #5c4529;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+
+.inf-desc {
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-size: 20px;
+
+  color: #5c4529;
+  line-height: normal;
 }
