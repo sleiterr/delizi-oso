@@ -10,6 +10,7 @@
 
   if (!modal.openModalBtn || !modal.closeModalBtn || !modal.modal) {
     console.log("Modal elements not found in the DOM.");
+    return
   }
 
   modal.openModalBtn.addEventListener("click", (e) => {
@@ -26,9 +27,10 @@
   function openModal() {
     modal.modal.classList.add("active");
     modal.body.classList.add("no-scroll");
+    modal.modal.scrollTop = 0;
   }
 
-  window.scrollTo({ top: 0, behavio: "smooth" });
+  // window.scrollTo({ top: 0, behavio: "smooth" });
 
   function closeModal() {
     modal.modal.classList.remove("active");
