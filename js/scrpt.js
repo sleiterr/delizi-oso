@@ -1,6 +1,7 @@
 // MODAL-ABOUT
 
 (() => {
+  // object
   const modal = {
     openModalBtn: document.getElementById("regstr-submit"),
     closeModalBtn: document.querySelector(".btt-regstr"),
@@ -8,10 +9,10 @@
     body: document.body,
   };
 
-  if (!modal.openModalBtn || !modal.closeModalBtn || !modal.modal) {
-    console.log("Modal elements not found in the DOM.");
-    return
-  }
+  // if (!modal.openModalBtn || !modal.closeModalBtn || !modal.modal) {
+  //   console.log("Modal elements not found in the DOM.");
+  //   return
+  // }
 
   modal.openModalBtn.addEventListener("click", (e) => {
     e.preventDefault();
@@ -30,7 +31,7 @@
     modal.modal.scrollTop = 0;
   }
 
-  // window.scrollTo({ top: 0, behavio: "smooth" });
+  window.scrollTo({ top: 0, behavio: "smooth" });
 
   function closeModal() {
     modal.modal.classList.remove("active");
