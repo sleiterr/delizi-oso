@@ -16,4 +16,84 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .nav-bar {
+    display: block;
+  }
+
+  .icon-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-right: 0px;
+    color: var(--link-color);
+    padding: 8px;
+  }
+
+  .log-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+  }
+
+  .burger-bttn {
+    width: 24px;
+    height: 24px;
+  }
+  /**=================*/
+  /*! HERO/SECTION */
+  /**=================*/
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-content {
+    font-size: 12px;
+
+    letter-spacing: 0.2px;
+
+    line-height: 24px; /* 40px */
+    margin: 15px 0 40px 0;
+    width: 310px;
+  }
+
+  /*? BTTN */
+
+  .hero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    width: 100%;
+  }
+
+  .order-btn {
+    font-size: 12px;
+    line-height: 23px; /* 40px */
+
+    padding: 12px 40px;
+    margin-right: 0px;
+  }
+
+  .reserv-btn {
+    font-size: 12px;
+
+    line-height: 23px;
+    padding: 12px 40px;
+  }
 }
