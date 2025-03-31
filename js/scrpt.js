@@ -31,7 +31,7 @@
     modal.modal.scrollTop = 0;
   }
 
-  window.scrollTo({ top: 0, behavio: "smooth" });
+  window.scrollTo({ top: 0, behavior: "smooth" });
 
   function closeModal() {
     modal.modal.classList.remove("active");
