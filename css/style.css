@@ -43,7 +43,8 @@ body {
   font-family: "Raleway", system-ui;
   height: 100%;
   line-height: 1;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  overflow: hidden;
 }
 
 button {
