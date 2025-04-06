@@ -136,12 +136,13 @@
 .backdrop {
   display: none;
   /* display: flex; */
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
   position: fixed;
   top: 0;
   left: 0;
+  padding: 60px 20px;
 
   width: 100%;
   height: 100%;
@@ -149,7 +150,7 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 999;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 .backdrop.active {
@@ -164,35 +165,15 @@
 }
 
 .modal {
-  position: absolute;
-  
-  width: 1112px;
-  height: 2065px;
-
-  top: 20%;
-
-  right: -3%;
-  padding: 60px;
+ width: 1112px;
+  height: auto;
+  max-height: none;
 
   background-color: #fff;
-  transform: translate(-30%, 0) scale(1);
-  z-index: 666;
-  overflow: auto;
+  margin: 100px auto 0 auto;
+  padding: 60px;
+  overflow: visible;
 }
-
-/* .modal {
-  position: relative;
-  max-height: 90%; 
-  max-width: 80%; 
-  width: 1112px;
-  background-color: #fff;
-  padding: 60px;
-  border-radius: 8px; 
-  overflow-y: auto; 
-  margin-top: 20px; 
-  margin-bottom: 20px;
-  z-index: 1000;
-} */
 
 .btt-close {
   font-size: 40px;
@@ -201,7 +182,8 @@
 .btt-regstr {
   position: absolute;
   top: 20px;
-  right: 80px;
+  right: 50%;
+  transform: translateX(-50%);
 
   width: 80px;
   height: 80px;
